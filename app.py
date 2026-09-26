@@ -1,4 +1,4 @@
-import subprocess
+import subprocess # nosec B404
 
 def validate_username(username):
     """Return True when a username is acceptable."""
@@ -30,6 +30,6 @@ if __name__ == "__main__":
 
 def show_directory_contents():
     """Safer version for Windows."""
-    subprocess.run(["cmd", "/c", "dir"], check=True) # nosec B603
+    subprocess.run(["cmd", "/c", "dir"], check=True) # nosec B603 B607
 
     

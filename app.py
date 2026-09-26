@@ -30,6 +30,6 @@ if __name__ == "__main__":
 
 def show_directory_contents():
     """Safer version for Windows."""
-    subprocess.run(["cmd", "/c", "dir"], check=True)
+    subprocess.run(["cmd", "/c", "dir"], check=True) # nosec B603
 
     
